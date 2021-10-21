@@ -7,17 +7,7 @@ namespace choixCouleurs
         public static void choixCouleurs(out string[] colors, out string[] combi)
         {
             // TABLEAU COLORS
-            colors = new string[6];
-            colors[0] = "rouge";
-            colors[1] = "jaune";
-            colors[2] = "bleu";
-            colors[3] = "orange";
-            colors[4] = "rose";
-            colors[5] = "noir";
-
-                //{ "rouge", "jaune", "orange", "bleu", "mauve", "rose" };
-
-
+            colors = new string[6] { "rouge", "jaune", "orange", "bleu", "mauve", "rose" };
             combi = new string[4];
             Random rnd = new Random();
 

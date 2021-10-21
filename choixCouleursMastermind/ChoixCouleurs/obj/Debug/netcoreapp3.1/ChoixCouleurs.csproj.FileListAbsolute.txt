@@ -11,3 +11,17 @@ C:\Users\190478\Desktop\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcorea
 C:\Users\190478\Desktop\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.dll
 C:\Users\190478\Desktop\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.pdb
 C:\Users\190478\Desktop\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.genruntimeconfig.cache
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.exe
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.deps.json
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.runtimeconfig.json
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.runtimeconfig.dev.json
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.dll
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.pdb
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.csproj.AssemblyReference.cache
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.AssemblyInfoInputs.cache
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.AssemblyInfo.cs
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.csproj.CoreCompileInputs.cache
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.dll
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.pdb
+C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.genruntimeconfig.cache
