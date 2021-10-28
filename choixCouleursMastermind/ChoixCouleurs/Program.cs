@@ -19,7 +19,7 @@ namespace choixCouleurs
 
         }
 
-        public static void afficher( string[] combi)
+        public static void afficher(string[]combi)
         {
            
             for (int n = 0; n < combi.Length; n++)
@@ -47,15 +47,49 @@ namespace choixCouleurs
             Console.WriteLine(resultatColorsJoueur);
             
         }
-        static void Main(string[] args)
+        public static void CompareRouge(string[] colorsJoueur, string[] combi, out string resultRouge, out int rouge)
+        {
+            rouge = 0;
+  
+            for (int i = 0; i < 4; i++)
+            {
+                if (colorsJoueur[i] == combi[i])
+                {
+                    rouge = rouge + 1;
+                }
+                else
+                {
+                    rouge = 0;
+                }
+            }
+            resultRouge = $"Languette(s) rouge : {rouge}";
+        }
+
+        public static void compareBlanc(string[] colorsJoueur, string[] combi)
+        {
+    
+            for (int y = 0; y < 4; y++)
+            {
+               
+            }
+          
+        }
+
+       
+    static void Main(string[] args)
         {
             
             string[] colors;
             string[] combi;
             string[] colorsJoueur = new string[4];
             string resultatColorsJoueur;
+            string resultRouge;
+            int rouge; 
             choixCouleurs(out colors, out combi);
+            afficher(combi);
             couleursjoueurs(ref colorsJoueur, out resultatColorsJoueur);
+            CompareRouge(colorsJoueur, combi, out resultRouge, out rouge);
+            compareBlanc(colorsJoueur, combi);
             Console.ReadLine();
         }
     }
