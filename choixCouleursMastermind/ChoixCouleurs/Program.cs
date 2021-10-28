@@ -28,10 +28,11 @@ namespace choixCouleurs
             }
         }
 
+        // Fonction choix des couleurs pour le joueur 
         public static void couleursjoueurs(ref string[] colorsJoueur, out string resultatColorsJoueur)
         {
 
-            resultatColorsJoueur = "";
+           resultatColorsJoueur = "";
            for(int n = 0; n < 4; n++)
             {
                 Console.WriteLine($"Entrez votre couleur n°{n}");

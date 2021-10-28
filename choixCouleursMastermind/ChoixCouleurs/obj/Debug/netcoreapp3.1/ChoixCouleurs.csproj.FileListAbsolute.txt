@@ -25,3 +25,16 @@ C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMasterm
 C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.dll
 C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.pdb
 C:\Users\Doria\OneDrive\Bureau\Programmation5TTI\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.genruntimeconfig.cache
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.exe
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.deps.json
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.runtimeconfig.json
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.runtimeconfig.dev.json
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.dll
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\bin\Debug\netcoreapp3.1\ChoixCouleurs.pdb
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.csprojAssemblyReference.cache
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.AssemblyInfoInputs.cache
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.AssemblyInfo.cs
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.csproj.CoreCompileInputs.cache
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.dll
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.pdb
+C:\Users\190478\Desktop\Mastermind\choixCouleursMastermind\ChoixCouleurs\obj\Debug\netcoreapp3.1\ChoixCouleurs.genruntimeconfig.cache
