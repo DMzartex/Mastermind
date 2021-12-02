@@ -19,6 +19,16 @@ namespace choixCouleurs
 
         }
 
+        public static void cloneCombiArray(string[] combi, out string[] cloneCombi)
+        {
+            cloneCombi = new string[4];
+
+            for (int i = 0; i < 4; i++)
+            {
+                cloneCombi[i] = combi[i];
+            }
+        }
+
         public static void afficher(string[]combi)
         {
            
@@ -47,17 +57,17 @@ namespace choixCouleurs
             Console.WriteLine(resultatColorsJoueur);
             
         }
-        public static void CompareRouge(string[] colorsJoueur, string[] combi, out string resultRouge, out int rouge)
+        public static void CompareRouge(string[] colorsJoueur, string[] cloneCombi, out string resultRouge, out int rouge)
         {
             rouge = 0;
-  
+
             for (int i = 0; i < 4; i++)
             {
-                if (colorsJoueur[i] == combi[i])
+                if (colorsJoueur[i] == cloneCombi[i])
                 {
                     rouge = rouge + 1;
                     colorsJoueur[i] = "*";
-                    combi[i] = "#";
+                    cloneCombi[i] = "#";
                 }
             }
             resultRouge = $"Languette(s) rouge : {rouge}";
@@ -83,28 +93,7 @@ namespace choixCouleurs
             }
             resultBlanc = $"Languette(s) blanche : {blanc}";
         }
-
-        public static void cloneColorsJoueurArray(string[] colorsJoueur, out string[] cloneColorsJoueur)
-        {
-            cloneColorsJoueur = new string[4];
-
-            for (int i = 0; i < 4; i++)
-            {
-                cloneColorsJoueur[i] = colorsJoueur[i];
-            }
-
-        }
-
-        public static void cloneCombiArray(string[] combi, out string[] cloneCombi)
-        {
-            cloneCombi = new string[4];
-
-            for(int i = 0; i < 4; i++)
-            {
-                cloneCombi[i] = combi[i];
-            }
-        }
-
+        
 
        public static void affichageTableau(string[] colorsJoueur, string[] combi,out string joueur, out string com)
         {
@@ -123,6 +112,20 @@ namespace choixCouleurs
 
         }
 
+
+        public static void screenWin(int rouge,ref string restart, out string messageWinner)
+        {
+            messageWinner = "";
+   
+            if(rouge == 4)
+            {
+                Console.Clear();
+                messageWinner = "Bravo vous avez gagnez !";
+                restart = "n";
+            }
+            Console.WriteLine(messageWinner);
+        }
+
        
     static void Main(string[] args)
         {
@@ -137,27 +140,37 @@ namespace choixCouleurs
             string resultBlanc;
             string joueur;
             string com;
-            string restart;
+            string restart = "y";
             string[] cloneCombi;
-            string[] cloneColorsJoueur;
-            restart = "y";
+            string messageWinner;
+            int b = 2;
             
             
             choixCouleurs(out colors, out combi);
-
-            while (restart == "y")
+            while (restart == "y" && b >= 0)
             {
+                b = b - 1;
                 afficher(combi);
                 couleursjoueurs(ref colorsJoueur, out resultatColorsJoueur);
-                cloneColorsJoueurArray(colorsJoueur, out cloneColorsJoueur);
                 cloneCombiArray(combi, out cloneCombi);
-                CompareRouge(colorsJoueur, combi, out resultRouge, out rouge);
+                CompareRouge(colorsJoueur, cloneCombi, out resultRouge, out rouge);
                 compareBlanc(colorsJoueur, combi, out blanc, out resultBlanc);
                 affichageTableau(colorsJoueur, combi, out joueur, out com);
                 Console.WriteLine(resultRouge);
                 Console.WriteLine(resultBlanc);
-                Console.WriteLine("Voulez vous rejouez ? y/n");
-                restart = Console.ReadLine();
+                screenWin(rouge, ref restart, out messageWinner);
+                if(restart == "y")
+                {
+                    Console.WriteLine("Voulez vous rejouez ? y/n");
+                    restart = Console.ReadLine();
+                }
+
+                
+            }
+            if (b < 0)
+            {
+                Console.Clear();
+                Console.WriteLine("Vous avez épuiser vos chances !");
             }
             Console.ReadLine();
         }
