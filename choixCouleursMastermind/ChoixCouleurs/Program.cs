@@ -52,13 +52,14 @@ namespace choixCouleurs
            // Boucle qui permet au joueur de choisir 4 couleurs
            for(int n = 0; n < 4; n++)
             {
+                int number;
                 // Verification que l'utilisateur rentre bien une valeur
                 do
-                {
+                {   
                     Console.WriteLine($"Entrez votre couleur n°{n}");
                     colorsJoueur[n] = Console.ReadLine();
-                    string refa = colorsJoueur[n];
-                } while (colorsJoueur[n] == "");
+
+                } while (colorsJoueur[n] == "" || int.TryParse(colorsJoueur[n],out number));
             }
 
             // Boucle qui affiche les couleurs choisi par le joueur
