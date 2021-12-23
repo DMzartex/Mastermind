@@ -34,17 +34,8 @@ namespace choixCouleurs
         }
 
 
-        public static void afficher(string[]combi)
-        {
-           
-            for (int n = 0; n < combi.Length; n++)
-            {
-                Console.WriteLine(combi[n]);
-            }
-        }
-
         // Fonction choix des couleurs pour le joueur 
-        public static void couleursjoueurs(ref string[] colorsJoueur, out string resultatColorsJoueur)
+        public static void couleursJoueurs(ref string[] colorsJoueur, out string resultatColorsJoueur)
         {
            // Résultat des couleurs entrer par le joueur sous forme de string 
            resultatColorsJoueur = "";
@@ -117,27 +108,9 @@ namespace choixCouleurs
             // Affichage du nombre de pions blancs
             resultBlanc = $"Languette(s) blanche : {blanc}";
         }
-        
-
-       public static void affichageTableau(string[] colorsJoueur, string[] combi,out string joueur, out string com)
-        {
-            joueur = "";
-            com = "";
-            
-            for(int b = 0; b < 4; b++)
-            {
-                joueur = joueur + "-" +colorsJoueur[b];
-                com = com +"-"+ combi[b];
-
-            }
-
-            Console.WriteLine(joueur);
-            Console.WriteLine(com);
-
-        }
 
         // Fonction qui affiche le message lorsque la partie est gagné
-        public static void screenWin(int rouge,ref string restart, out string messageWinner)
+        public static void screenWin(int rouge,ref string restart, out string messageWinner, ref int b)
         {
             // Message win
             messageWinner = "";
@@ -148,7 +121,7 @@ namespace choixCouleurs
                 Console.Clear();
                 messageWinner = "Bravo vous avez gagnez !";
                 // La variable restart prend comme valeur n pour empecher le joueur de réessayer si il a gagner
-                restart = "n";
+                b = -1;
             }
             // Affichage du message win
             Console.WriteLine(messageWinner);
@@ -165,45 +138,46 @@ namespace choixCouleurs
             int rouge;
             int blanc;
             string resultBlanc;
-            string joueur;
-            string com;
             string restart = "y";
             string[] cloneCombi;
             string messageWinner;
             int b = 12;
+            int titre = 1;
             
             
             choixCouleurs(out colors, out combi);
             // Condition pour réessayer
+          
             while (restart == "y" && b > 0)
-            {   
+            {   if(titre == 1)
+                {
+                    Console.WriteLine("Bienvenu dans le Mastermind du Doris !");
+                    Console.WriteLine("------------------------------------------------ \n");
+                }
+                titre = 0;
                 // Nombre de chance -1 à chaque tour
                 b = b - 1;
-                afficher(combi);
-                couleursjoueurs(ref colorsJoueur, out resultatColorsJoueur);
+                restart = null;
+                couleursJoueurs(ref colorsJoueur, out resultatColorsJoueur);
                 cloneCombiArray(combi, out cloneCombi);
                 CompareRouge(colorsJoueur, cloneCombi, out resultRouge, out rouge);
                 compareBlanc(colorsJoueur, combi, out blanc, out resultBlanc);
-                affichageTableau(colorsJoueur, combi, out joueur, out com);
                 Console.WriteLine(resultRouge);
                 Console.WriteLine(resultBlanc);
-                screenWin(rouge, ref restart, out messageWinner);
-                // Condition pour avoir le message qui propose de réessayer qui s'affiche
-                do
+                screenWin(rouge, ref restart, out messageWinner, ref b);
+                if (restart == null && b > 0)
                 {
-                    if (b > 0)
-                    {
-                        Console.WriteLine("Voulez vous rejouez ? y/n");
-                        restart = Console.ReadLine();
-                    }
-                } while (restart == "" || restart != "y" || restart != "n");
-
+                    Console.WriteLine("Voulez vous rejouez ? y/n");
+                    restart = Console.ReadLine();
+                }
+                // Condition pour avoir le message qui propose de réessayer qui s'affiche
             }
+
             // Condition pour avoir le message de fin qui s'affiche
             if (b == 0)
             {
                 Console.Clear();
-                Console.WriteLine("Vous avez épuiser vos chances !");
+                Console.WriteLine("Vous avez perdu car vous n'avez plus de chances !");
             }
             if(restart == "n")
             {
